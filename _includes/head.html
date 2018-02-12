@@ -1,0 +1,54 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <meta content="{{ site.title }}" property="og:site_name">
+  {% if page.title %}
+    <meta content="{{ page.title }}" property="og:title">
+  {% else %}
+    <meta content="{{ site.title }}" property="og:title">
+  {% endif %}
+  {% if page.title %}
+    <meta content="article" property="og:type">
+  {% else %}
+    <meta content="website" property="og:type">
+  {% endif %}
+  {% if page.description %}
+    <meta content="{{ page.description }}" property="og:description">
+  {% else %}
+    <meta content="{{ site.description }}" property="og:description">
+  {% endif %}
+  {% if page.url %}
+    <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+  {% endif %}
+  <meta content="http://www.vienschezwam.org/images/preview.jpg" property="og:image" >
+
+  <!--[if lte IE 8]><script src="{{ "/js/ie/html5shiv.js" | prepend: site.baseurl }}"></script><![endif]-->
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
+  <!--[if lte IE 8]><link rel="stylesheet" href="{{ "/css/ie8.css" | prepend: site.baseurl }}" /><![endif]-->
+  <!--[if lte IE 9]><link rel="stylesheet" href="{{ "/css/ie9.css" | prepend: site.baseurl }}" /><![endif]-->
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+
+  <!-- Piwik -->
+  <script type="text/javascript">
+  var _paq = _paq || [];
+    _paq.push(["setDomains", ["*.www.vienschezwam.org"]]);
+      _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+          (function() {
+                var u="//178.62.2.109/piwik/";
+                    _paq.push(['setTrackerUrl', u+'piwik.php']);
+                        _paq.push(['setSiteId', 2]);
+                            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+                                  })();
+  </script>
+  <noscript><p><img src="//178.62.2.109/piwik/piwik.php?idsite=2" style="border:0;" alt="" /></p></noscript>
+  <!-- End Piwik Code -->
+
+</head>
