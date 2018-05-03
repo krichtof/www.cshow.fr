@@ -1,0 +1,22 @@
+{
+  "name": "www.cshow.fr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/miniplexe/www.cshow.fr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/miniplexe/www.cshow.fr/issues"
+  },
+  "homepage": "https://gitlab.com/miniplexe/www.cshow.fr#README",
+  "dependencies": {
+    "bulma": "^0.7.1"
+  }
+}
