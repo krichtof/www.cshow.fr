@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import "node_modules/bulma/sass/utilities/initial-variables";
+$family-sans-serif: "Open Sans";
+$family-primary: $family-sans-serif;
+$navbar-height: 6rem;
+$navbar-item-img-max-height: 4rem;
+
+@import "node_modules/bulma/bulma";
+
+h1, h2, h3, h4 {
+  font-family: Supernettcn-Regular;
+  font-weight: normal;
+  font-style: normal;
+}
