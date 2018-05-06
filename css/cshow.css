@@ -1,3 +1,48 @@
 .section.festival {
   background-color: #fad39f;
 }
+
+.hero.is-danger {
+  background-image: url("../images/hero-bg.svg"), linear-gradient(70deg, #F89465, #F25046 60%);
+}
+
+.hero-body {
+  background-image: url("../images/hero-body-img@2x.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 75%;
+}
+.hero.is-large .hero-body {
+    padding-bottom: 5rem;
+    padding-top: 8rem;
+}
+
+.title {
+  font-weight: 400;
+}
+
+.button.is-large.btn-header {
+
+    font-size: 1.5rem;
+    font-family: "Supernettcn-Regular";
+    text-transform: uppercase;
+    letter-spacing: .07rem;
+    background-color: #674848;
+    border: none;
+    border-radius: 0px;
+    color: #FCF8F3;
+    margin-top: 1.2rem;
+}
+
+/* responsive */
+
+@media screen and (min-width: 769px), print {
+    .hero.is-large .hero-body {
+      padding-bottom: 22rem;
+      padding-top: 8rem; } 
+  .title {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
