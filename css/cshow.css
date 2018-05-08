@@ -34,6 +34,9 @@ h1.title {
 }
 
 /*section films festival */
+.columns:not(:last-child) {
+  margin-bottom: calc(3rem - 0.75rem);
+}
 p.section-sub {
   font-size: 1.2rem;
 }
@@ -63,8 +66,20 @@ p.medium-width {
   background-size: 73px auto;
 }
 
-.align-left {
+.film-infos {
   text-align:left;
+  padding-top: 2.2em;
+}
+
+.film-time {
+  font-family: "Supernettcn-Bold";
+  background-image: url("../images/bg-time.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: inline;
+  padding: 0.6em 0.8em;
+  background-size: 100% 2.2em;
 }
 
 

@@ -1888,7 +1888,8 @@ a.box:active {
 
 .content h4 {
   font-size: 1.3em;
-  margin-bottom: 0.8em; }
+  margin-bottom: 0px;
+  /*margin-bottom: 0.8em*/ }
 
 .content h5 {
   font-size: 1.125em;
