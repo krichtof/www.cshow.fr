@@ -7,8 +7,34 @@ $navbar-item-img-max-height: 4rem;
 
 @import "node_modules/bulma/bulma";
 
-h1, h2, h3, h4 {
+/*h1, h2, h3 {
   font-family: Supernettcn-Regular;
   font-weight: normal;
   font-style: normal;
+}
+*/
+.content h1, .content h2, .content h3, .content h4{
+  font-weight: normal;
+}
+
+.content h1, .content h2, .content h3 {
+  font-family: Supernettcn-Regular;
+}
+
+.content h2 {
+  /*font-size: 2.3em;*/
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+
+.content h3 {
+  /*font-size: 1.8em;*/
+}  
+
+.content h4 {
+  font-family: Supernettcn-Bold;
+  /*font-size: 1.3em;*/
+  text-transform: uppercase;
+  line-height: 1.6em;
+  letter-spacing: .02em;
 }
