@@ -38,3 +38,19 @@ $navbar-item-img-max-height: 4rem;
   line-height: 1.6em;
   letter-spacing: .02em;
 }
+
+.navbar {
+  font-family: "Supernettcn-Regular";
+  letter-spacing:.02em;
+  font-size: 1.2rem;
+}
+
+a.navbar-item {
+  transition: color 0.4s ease forwards;
+}
+a.navbar-item:hover, 
+a.navbar-item.is-active, 
+.navbar-link:hover, 
+.navbar-link.is-active {
+  color: #e7624b;
+}

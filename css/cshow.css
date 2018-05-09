@@ -21,7 +21,10 @@ h1.title {
   font-family: "Supernettcn-Regular";
   font-weight: normal;
 }
-
+.content h2 span.sec-title-bold {
+  font-family: "Supernettcn-Bold";
+  line-height:1.4em;
+}
 .button.is-large.btn-header {
     font-size: 1.5rem;
     font-family: "Supernettcn-Bold";
@@ -30,16 +33,48 @@ h1.title {
     border: none;
     border-radius: 0px;
     color: #FCF8F3;
-    padding: 1em 1em;
+    padding: 1em 2.2em 1em 1em;
+    transition: background 0.5s ease, margin-left 0.5s ease; 
+}
+.button .btn-icon {
+  position: absolute;
+  right: 0;
+  width: 55px;
+  font-family: "Supernettcn-Bold";
+  font-size: 1em;
+  text-align: center;
+  color: #fff;
+}
+.button.is-large.btn-header:hover {
+  background: rgba(103, 72, 72, 0.6);
+  animation: btn-header-anim 0.5s ease forwards;
+}
+
+.button .btn-icon:hover {
+  right:-2px;
+  
+  
+}
+@keyframes btn-header-anim {
+  to{
+    margin-left: 0.6em;
+    padding-right:2.8em;
+  }
 }
 
 /*section films festival */
 .columns:not(:last-child) {
   margin-bottom: calc(3rem - 0.75rem);
 }
-p.section-sub {
-  font-size: 1.2rem;
+.columns.is-mobile.col-inside {
+  padding-left: 2em;
+  padding-right: 2em;
 }
+p.festival-sub {
+  font-size: 1.2rem;
+  padding: 0 0 3em 0;
+}
+
 p.medium-width {
   padding: 0 11em 3em 11em;
 }
@@ -77,13 +112,18 @@ p.medium-width {
   background-repeat: no-repeat;
   background-position: center;
   color: white;
-  display: inline;
-  padding: 0.6em 0.8em;
-  background-size: 100% 2.2em;
+  padding: 0.6em 0;
+  background-size: 4em 2.2em;
 }
 
 
 /* responsive */
+
+@media screen and (min-width: 1280px) {
+  p.festival-sub {
+  padding: 0 11em 3em 11em;
+  }
+}
 
 @media screen and (min-width: 769px), print {
     .hero.is-large .hero-body {
