@@ -13,6 +13,10 @@ $navbar-item-img-max-height: 4rem;
   font-style: normal;
 }
 */
+.navbar-brand {
+  align-items: self-start;
+  padding-left: 1em;
+}
 .content h1, .content h2, .content h3, .content h4{
   font-weight: normal;
 }
