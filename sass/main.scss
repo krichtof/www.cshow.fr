@@ -19,8 +19,19 @@ $link: $red-link;
   font-family: $heading-bold;
   font-weight: normal;
 }
-.subtitle {
+/*.subtitle {
   font-family: $family-heading;
+}
+*/
+.heading-regular {
+  font-family: $family-heading;
+  font-weight: normal;
+}
+.txt-dark {
+  color: $black;
+}
+.txt-light {
+  color: white;
 }
 .navbar {
   font-family: $family-heading;
@@ -230,37 +241,39 @@ a.link-invert:hover {
   color:#666768;
 }
 
-/*background hero event apero */
-
-.hero.bg-apero {
-  background-image: url("../images/img-bg-film-apero.png"), linear-gradient(70deg, #9BBFB1, #609E88 60%);
+/*background hero event */
+.hero.bg {
   background-repeat: repeat;
   background-position: center;
 }
-.bg-icon-apero {
-  height: 110px;
-  background-image: url("../images/img-icon-aperofilm@2x.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size:auto 110px;
+.hero.bg-tracy {
+  background-image: url("../images/img-bg-film-apero.png"), linear-gradient(70deg, #9BBFB1, #609E88 60%);
+}
+.hero.bg-hermitage {
+  background-image: url("../images/img-bg-film-apero-light.png"), linear-gradient(70deg, #FFEA86, #EAC254 60%);
+}
+.hero.bg-asso-traces {
+  background-image: url("../images/img-bg-film-apero-light.png"), linear-gradient(70deg, #EFDCDF, #A992B0 60%);
+}
+.hero.bg-cclo {
+  background-image: url("../images/img-bg-film-apero-light.png"), linear-gradient(70deg, #D86747, #CB4435 60%);
 }
 
+/* section A l'affiche */
+.section-a-laffiche {
+  background-color: #ffffff;
+}
 
 /* event page */
-
-/*.event-box-date {
-  font-family: $heading-bold;
-  text-transform: uppercase;
-  background-image: url("../images/bg-date@2x.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 54px auto;
-  width: 62px;
-  text-align: center;
-  padding-top: 2rem;
-  line-height: 1.8rem;
+.section-event {
+  background-color: #F9F9F8;
 }
-*/
+@media screen and (max-width: 769px) {
+  .reverse-column-order {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .card-content-first {
   padding-top:0px;
   padding-left:1.5rem;
@@ -276,7 +289,11 @@ a.link-invert:hover {
   padding-left:0px;
   padding-bottom:0px;
 }
-
+.box-custom {
+  border: solid 4px #ede8e7;
+  border-radius: 2px;
+  margin-bottom: 2.2rem;
+}
 .media-content.single-centered {
   align-self: center;
 }
@@ -296,20 +313,20 @@ a.link-invert:hover {
 h1.title-orga {
   font-family: "FranklinGothicHandDemiShadow";
   line-height: 3.2rem;
-  color: $black;
   margin-top: 4rem;
+  font-size:3.5rem;
 }
 
 h2.event-subtitle {
   font-family: $fait-son-cine;
   line-height: 3.8rem;
-  color: $white;
+  font-size: 3.2rem;
 }
 .hero-body img.icon-ambiance {
   position: absolute;
-  height: 110px;
-  max-width: 141px;
-  left: 0;
+  height: auto;
+  max-width: 145px;
+  left: 3.5rem;
   bottom: 0;
 }
 img.img-hero-film {
@@ -327,7 +344,7 @@ img.img-hero-film {
   align-items:flex-start;
 }
 .staring img {
-  height:204px;
+  max-height:204px;
 }
 
 /* responsive */
