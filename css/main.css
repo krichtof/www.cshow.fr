@@ -6517,6 +6517,15 @@ a {
 .button.is-large.btn-medium {
   font-size: 1.2rem; }
 
+.past-event {
+  font-family: "Supernettcn-Bold";
+  letter-spacing: .04rem;
+  background-color: #e5e5e5;
+  color: #969799;
+  padding: 1rem 1.2rem;
+  font-size: 1.2rem;
+  display: inline; }
+
 .button.is-large.btn-header {
   /*font-size: 1.5rem;*/
   font-family: "Supernettcn-Bold";
@@ -6682,28 +6691,45 @@ a.link-invert:hover {
 @media screen and (min-width: 769px), print {
   .hero.is-large .hero-body.event {
     padding-bottom: 0rem;
-    padding-top: 3rem; } }
+    padding-top: 3rem; }
+  .hero h1.title-orga {
+    margin-top: 4rem;
+    font-size: 3.5rem;
+    line-height: 3.6rem; }
+  .hero h2.event-subtitle {
+    line-height: 3.8rem;
+    font-size: 3.2rem; } }
 
-h1.title-orga {
+@media (max-width: 678px) {
+  .hero h1.title-orga {
+    font-size: 2.3rem;
+    line-height: 2.4rem; }
+  .hero h2.event-subtitle {
+    font-size: 2.4rem;
+    line-height: 2.4rem; } }
+
+.hero h1.title-orga {
   font-family: "FranklinGothicHandDemiShadow";
-  line-height: 3.2rem;
-  margin-top: 4rem;
-  font-size: 3.5rem; }
+  margin-top: 2.2rem; }
 
-h2.event-subtitle {
-  font-family: "Supernettcn-BoldItalic";
-  line-height: 3.8rem;
-  font-size: 3.2rem; }
+.hero h2.event-subtitle {
+  font-family: "Supernettcn-BoldItalic"; }
 
 .hero-body img.icon-ambiance {
   position: absolute;
   height: auto;
   max-width: 145px;
-  left: 3.5rem;
+  left: 0;
   bottom: 0; }
 
-img.img-hero-film {
-  max-width: 520px; }
+@media screen and (min-width: 769px) {
+  .hero-body img.icon-ambiance {
+    position: absolute;
+    left: 3.5rem; } }
+
+@media screen and (min-width: 520px) {
+  img.img-hero-film {
+    max-width: 520px; } }
 
 .columns.bottom-zero {
   margin-bottom: 0; }
@@ -6718,6 +6744,10 @@ img.img-hero-film {
 
 .staring img {
   max-height: 204px; }
+
+@media screen and (max-width: 768px) {
+  .hero-event-col-mobile {
+    padding-bottom: 3rem; } }
 
 /* responsive */
 @media screen and (min-width: 1280px) {
