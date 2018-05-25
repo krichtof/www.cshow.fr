@@ -14,7 +14,64 @@ $black: hsl(240, 2%, 21%);
 $black-bis: hsl(210, 1%, 31%);
 $red-link: hsl(9, 80%, 60%);
 $link: $red-link;
+$hover-red: hsl(9, 82%, 65%);
+$red-bis:hsl(11, 69%, 62%);
+$input-focus-border-color: $red-link;
 
+/*elements*/
+.control {
+  margin-bottom: 1.5rem;
+}
+.input {
+  border-radius: .15rem;
+}
+.input:active, .input:focus {
+  border-color: $grey-darker;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-radius:0px;
+}
+.button.is-primary {
+  border-radius: .15rem;
+  background-color: $red-bis;
+}
+.button.is-primary:hover {
+  background-color: $hover-red;
+}
+.button.is-text {
+  text-decoration: none;
+  color: $red-link;
+}
+.button.is-text:hover {
+  background-color:transparent;
+  text-decoration: none;
+  color: $black-bis;
+}
+.btn-icon-custom {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 1rem;
+}
+.separator {
+  padding: 2rem 0;
+  border-bottom: 1px solid #e6e6e6;
+  display: block;
+  margin-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.label {
+  font-weight:400;
+}
+
+.button.is-link {
+  background-color: #583E3E;
+  border-radius: .15rem;
+}
+.button.is-link:hover {
+  background-color:#6D5252;
+}
 .heading-bold {
   font-family: $heading-bold;
   font-weight: normal;
