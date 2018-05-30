@@ -4,8 +4,16 @@ $family-sans-serif: "Open Sans";
 $family-primary: $family-sans-serif;
 $navbar-height: 5rem;
 $navbar-item-img-max-height: 4rem;
+$brown: hsl(0, 17%, 29%);
+$primary: $brown;
+$success: hsl(171, 64%, 43%);
+$info: $grey-dark; 
+$warning: hsl(21, 96%, 72%);
+$danger: hsl(4, 86%, 59%);
 
 @import "node_modules/bulma/bulma";
+@import "node_modules/bulma-steps/dist/bulma-steps";
+@import "node_modules/bulma-calendar/dist/bulma-calendar";
 $family-heading: "Supernettcn-Regular";
 $heading-bold: "Supernettcn-Bold";
 $fait-son-cine: "Supernettcn-BoldItalic";
@@ -14,26 +22,183 @@ $black: hsl(240, 2%, 21%);
 $black-bis: hsl(210, 1%, 31%);
 $red-link: hsl(9, 80%, 60%);
 $link: $red-link;
-$hover-red: hsl(9, 82%, 65%);
-$red-bis:hsl(11, 69%, 62%);
+$hover-red: hsl(9, 81%, 71%);
+$red-bis: hsl(8, 81%, 66%);
 $input-focus-border-color: $red-link;
 
+$calendar-header-color: $red-bis;
+$calendar-today-color: $red-bis;
+
+
+/*notifications */
+.notification {
+  color: white;
+}
+.notification.is-info {
+  background-color:$info;
+}
+.notification.is-success {
+  background-color:$success;
+}
+.notification.is-warning {
+  background-color:$warning;
+}
+.notification.is-danger {
+  color: #ea372b ;
+  background-color: white;
+  border: 3px solid $danger;
+}
+/* datepicker calendar */
+.datepicker .calendar .calendar-nav {
+  background:$calendar-header-color;
+}
+.datepicker .calendar .calendar-date .date-item.is-active {
+  background: $calendar-today-color;
+  border-color: $calendar-today-color;
+}
+
+/*control button */
+.button.btn-control {
+  font-family: $heading-bold;
+  letter-spacing:.02em;
+  padding-bottom: calc(0.3em - 2px);
+}
+.button.btn-rounded {
+  color: white;
+  border-radius: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: $red-bis;
+  border: none;
+}
+.button.btn-rounded:hover {
+  background-color: $hover-red;
+}
+
+.button.btn-rounded-disabled {
+  border-radius: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: #e7d4d4;
+  border: none;
+}
+
+.button .btn-icon-right {
+  padding-left: .8rem;
+}
+
+/*film catalogue */
+
+ul.nav-side-films li a {
+  color:$grey-dark;
+}
+ul.nav-side-films li a:hover, ul.nav-side-films li a:active {
+  color:$hover-red;
+}
+ul.nav-side-films li {
+  margin: .3rem 0;
+  }
+a.film-hover {
+  opacity:1;
+  transition: all 0.4s ease-in-out 0s;
+}
+a.film-hover:hover {
+  opacity: 0.7;
+}
+.dropdown-content {
+  background-color: transparent;
+  box-shadow: none;
+}
+.dropdown .dropdown-menu {
+  left: -12px;
+  top: 85%;
+}
+/* layout */
+.space-bottom {
+  margin-bottom: 3rem;
+}
+.centered-narrow {
+  text-align: center;
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+
+.detail-overview {
+height: 3em;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+}
 /*elements*/
+.card-content-large {
+  padding: 2rem;
+}
+.box-space-large {
+  padding: 2rem;
+}
+.search-input {
+  background-color: transparent;
+  border-bottom: 1px solid #dbdbdb;
+  border-top:0;
+  border-left:0;
+  border-right:0;
+  box-shadow: none;
+}
+.button {
+  border-radius: 0;
+}
+.button.txt-small-ajust {
+  font-size: .8rem;
+  padding-top: .65rem;
+}
+.align-base {
+  align-items:baseline;
+}
+.label {
+  font-family: $family-heading;
+  letter-spacing: .02em;
+}
+.field-label .label {
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.steps .step-item .step-marker {
+}
+.steps .step-item .step-marker {
+  font-family:$heading-bold;
+  font-weight: normal;
+  border-width: .18em;
+  padding-top: .15em;
+}
+.steps .step-item.is-success.is-active .step-marker {
+  border-color: $red-bis;
+  color: $red-bis;
+}
+.steps .step-item .step-details .step-title {
+  font-size: 1.2rem;
+  font-weight: normal;
+  font-family: $family-heading;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+}
+.input:focus, .input.is-focused, .input:active, .input.is-active, .textarea:focus, .textarea.is-focused, .textarea:active, .textarea.is-active {
+    box-shadow:none;
+}
 .control {
   margin-bottom: 1.5rem;
 }
 .input {
-  border-radius: .15rem;
+  border-radius: 0;
 }
 .input:active, .input:focus {
-  border-color: $grey-darker;
+  border-bottom-color: $grey-darker;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
   border-radius:0px;
 }
 .button.is-primary {
-  border-radius: .15rem;
+  border-radius: 0;
   background-color: $red-bis;
 }
 .button.is-primary:hover {
@@ -67,7 +232,7 @@ $input-focus-border-color: $red-link;
 
 .button.is-link {
   background-color: #583E3E;
-  border-radius: .15rem;
+  border-radius: 0;
 }
 .button.is-link:hover {
   background-color:#6D5252;
@@ -77,7 +242,7 @@ $input-focus-border-color: $red-link;
   font-weight: normal;
 }
 /*.subtitle {
-  font-family: $family-heading;
+font-family: $family-heading;
 }
 */
 .heading-regular {
@@ -133,8 +298,8 @@ a {
 }
 @media screen and (min-width: 1216px) {
   .title.is-2 {
-  font-size: 3rem;
-}
+    font-size: 3rem;
+  }
 }
 
 .uppercase-on {
@@ -155,25 +320,30 @@ a {
   padding-bottom: 21rem;
   padding-top: 3.5rem;
 }
+@media screen and (min-width: 769px), print {
+  .hero.is-large.hero-home {
+    padding-bottom: 16rem;
+    padding-top: 5rem; }
+}
 
 @media screen and (min-width: 480px){
   .hero.is-large .hero-body.hero-home {
-  padding: 6rem 4rem 22rem 4rem;
+    padding: 6rem 4rem 22rem 4rem;
   }
   .hero-home {
-  background-image: url("../images/hero-img@2x.png");
+    background-image: url("../images/hero-img@2x.png");
   }
 }
 @media screen and (min-width: 480px) and (max-width:768px){
   .hero-home {
-  background-size: 110%;
-}
+    background-size: 110%;
+  }
 }
 
 @media screen and (min-width: 769px){
   .hero-home {
-  background-position: center bottom;
-  background-size: auto 360px;
+    background-position: center bottom;
+    background-size: auto 360px;
   }
 }
 
@@ -184,24 +354,24 @@ a {
   font-size: 1.2rem; 
 }
 .past-event {
-    font-family: "Supernettcn-Bold";
-    letter-spacing: .04rem;
-    background-color: #e5e5e5;
-    color: #969799;
-    padding: 1rem 1.2rem;
-    font-size: 1.2rem;
-    display:inline;
+  font-family: "Supernettcn-Bold";
+  letter-spacing: .04rem;
+  background-color: #e5e5e5;
+  color: #969799;
+  padding: 1rem 1.2rem;
+  font-size: 1.2rem;
+  display:inline;
 }
 .button.is-large.btn-header {
-    /*font-size: 1.5rem;*/
-    font-family: "Supernettcn-Bold";
-    letter-spacing: .04rem;
-    background-color: #674848;
-    border: none;
-    border-radius: 0px;
-    color: #FCF8F3;
-    padding: 1em 2.2em 1em 1em;
-    transition: background 0.5s ease, margin-left 0.5s ease; 
+  /*font-size: 1.5rem;*/
+  font-family: "Supernettcn-Bold";
+  letter-spacing: .04rem;
+  background-color: #674848;
+  border: none;
+  border-radius: 0px;
+  color: #FCF8F3;
+  padding: 1em 2.2em 1em 1em;
+  transition: background 0.5s ease, margin-left 0.5s ease; 
 }
 .button .btn-icon {
   position: absolute;
@@ -232,15 +402,26 @@ a {
 }
 @media screen and (min-width: 768px) {
   .content figure {
-  margin-left: 1.2em;
-  margin-right: 1.2em;
-}
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+  }
 }
 
 .top {
   padding-top: 3rem;
 }
 
+/* hero je programme ma projection */
+.prog {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+@media screen and (min-width: 769px) {
+  .prog {
+    padding-bottom: 3rem;
+    padding-top: 3rem; 
+  }
+}
 /* section festival*/
 
 .section.festival {
@@ -262,6 +443,11 @@ a {
 p.festival-sub {
   font-size: 1.2rem;
   padding: 0 0 3em 0;
+}
+@media screen and (min-width: 1280px) {
+  p.festival-sub {
+    padding: 0 11em 3em 11em;
+  }
 }
 
 p.medium-width {
@@ -371,19 +557,19 @@ a.link-invert:hover {
   padding-top: 3rem;
 }
 @media screen and (min-width: 769px), print {
-    .hero.is-large .hero-body.event {
-      padding-bottom: 0rem;
-      padding-top: 3rem; 
-    } 
-    .hero h1.title-orga {
-      margin-top: 4rem;
-      font-size: 3.5rem;
-      line-height: 3.6rem;
-    }
-    .hero h2.event-subtitle {
-      line-height: 3.8rem;
-      font-size: 3.2rem;
-    }
+  .hero.is-large .hero-body.event {
+    padding-bottom: 0rem;
+    padding-top: 3rem; 
+  } 
+  .hero h1.title-orga {
+    margin-top: 4rem;
+    font-size: 3.5rem;
+    line-height: 3.6rem;
+  }
+  .hero h2.event-subtitle {
+    line-height: 3.8rem;
+    font-size: 3.2rem;
+  }
 }
 @media (max-width:678px) {
   .hero h1.title-orga {
@@ -402,7 +588,7 @@ a.link-invert:hover {
 
 .hero h2.event-subtitle {
   font-family: $fait-son-cine;
- 
+
 }
 .hero-body img.icon-ambiance {
   position: absolute;
@@ -419,9 +605,9 @@ a.link-invert:hover {
 }
 
 @media screen and (min-width: 520px) {
-img.img-hero-film {
-max-width: 520px;
-}
+  img.img-hero-film {
+    max-width: 520px;
+  }
 }
 .columns.bottom-zero {
   margin-bottom: 0;
@@ -439,25 +625,20 @@ max-width: 520px;
 }
 @media screen and (max-width: 768px) {
   .hero-event-col-mobile {
-  padding-bottom: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
 /* responsive */
 
-@media screen and (min-width: 1280px) {
-  p.festival-sub {
-  padding: 0 11em 3em 11em;
-  }
-}
 
-@media screen and (min-width: 769px), print {
-  .hero.is-large.hero-home {
-      padding-bottom: 16rem;
-      padding-top: 5rem; } 
-  .title {
+
+
+  /*@media {
+    .title {
     font-size: 2.6rem; 
     line-height: 3.6rem;
   }
-  
+
 }
+*/

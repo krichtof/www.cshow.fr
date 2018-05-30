@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Je programme ma projection</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/cshow.css">
+    <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a href="#"> <!-- before was: "a class="navbar-item" -->
+            <img src="images/logo-nav.svg" alt="C-Show - Faites votre cinéma">
+          </a>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+          <!-- navbar start, navbar end -->
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item" href="/inscription.html">J'organise une séance</a>
+            <a class="navbar-item" href="#">Je consulte le catalogue</a>
+
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section class="hero is-danger is-medium is-large">
+      <div class="prog">
+
+        <div class="container has-text-left">
+          <div class="columns is-centered" style="align-items: center;">
+            
+            <div class="column has-text-centered-mobile is-offset-one-fifth-desktop is-one-third-tablet is-2-desktop has-text-right-desktop has-text-right-tablet">
+             <img class="" src= "images/img-persoproj-prog@2x.png" style="height: 141px;">
+            </div>
+
+            <div class="column has-text-centered-mobile has-text-left-desktop">
+              <h1 class="title is-2">Je programme ma projection !</h1>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section festival">
+      <div class="container is-primary">
+        <div class="steps" id="stepsDemo">
+          <div class="step-item is-active"data-step-id="0">
+            <div class="step-marker">1</div>
+            <div class="step-details">
+              <p class="step-title">la date</p>
+            </div>
+          </div>
+          <div class="step-item" data-step-id="1">
+            <div class="step-marker">2</div>
+            <div class="step-details">
+              <p class="step-title">le film</p>
+            </div>
+          </div>
+          <div class="step-item" data-step-id="2">
+            <div class="step-marker">4</div>
+            <div class="step-details">
+              <p class="step-title">le lancement</p>
+            </div>
+          </div>
+          
+           <div class="steps-content centered-narrow">
+             
+             <div class="step-content is-active ">
+             <div class="field column is-half-desktop is-offset-3-desktop is-grouped is-grouped-centered">
+                <div class="field-label is-large has-text-right">
+                  <label class="label">Date</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <input id="datepickerDemo" class="input is-medium" type="date" autofocus data-validate="require">
+                    </div>
+                  </div>
+                </div>
+              
+                </div>
+              </div>
+            
+            <div class="step-content has-text-centered">
+              <div class="field is-grouped is-grouped-right">
+                <div class="field is-grouped">
+                  <p class="control is-expanded">
+                    <input class="input" type="text" placeholder="Rechercher un film, un acteur, une actrice...">
+                  </p>
+                  <p class="control">
+                    <a class="button is-text">
+                      <span class="icon is-small is-right">
+      <img src="images/icon-search.svg" class="icon-btn">
+    </span>
+                    </a>
+                  </p>
+                </div>
+              </div>
+              <div class="columns is-variable is-8">
+                <div class="column has-text-left is-one-quarter">
+                  <div class="card-content">
+                    <p class="title uppercase-on is-4"> Ambiances</p>
+                    <ul class="nav-side-films">
+    
+                    <li><a href="#">
+                         Débat
+                       </a></li>
+
+                    <li><a href="#">
+                         Apero Film
+                       </a></li>
+
+                    <li><a href="#">
+                         Films cultes
+                       </a></li>
+
+                    <li><a href="#">
+                         Frissons
+                       </a></li>
+
+                    <li><a href="#">
+                         Goûter
+                       </a></li>
+
+                    <li><a href="#">
+                         Festif
+                       </a></li>
+
+                    <li><a href="#">
+                         Soirée déguisée
+                       </a></li>
+    
+
+                    </ul>
+                  </div>
+                </div>
+                
+                <div class="column">
+                 <div class="space-bottom"><h2 class="title is-2">Box office 2015</h2> </div>                
+                  <div class="columns">
+                    <div class="column">
+                     <div class="dropdown is-hoverable">
+                        <a class="dropdown-trigger film-hover">
+                          <img src="images/films/fast&amp;furious.jpg" aria-haspopup="true" aria-controls="dropdown-menu4" alt="">
+                        </a>
+                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                          <div class="dropdown-content">
+                            <div class="dropdown-item">
+                              <a class="button is-link heading-bold">Je choisis ce film </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="column">
+
+                      <div class="dropdown is-hoverable">
+                        <a class="dropdown-trigger film-hover">
+                          <img src= "images/films/pourquoi-j-ai.jpg" aria-haspopup="true" aria-controls="dropdown-menu4" alt="">
+                        </a>
+                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                          <div class="dropdown-content">
+                            <div class="dropdown-item">
+                              <a class="button is-link heading-bold">Je choisis ce film </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                   
+                    </div>
+                    
+                    <div class="column">
+                        <div class="dropdown is-hoverable">
+                        <a class="dropdown-trigger film-hover">
+                          <img src= "images/films/nouveauHeros.jpg" aria-haspopup="true" aria-controls="dropdown-menu4" alt="">
+                        </a>
+                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                          <div class="dropdown-content">
+                            <div class="dropdown-item">
+                              <a class="button is-link heading-bold">Je choisis ce film </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="columns">
+                    <div class="column">
+                            <div class="dropdown is-hoverable">
+                        <a class="dropdown-trigger film-hover">
+                          <img src= "images/films/pourquoi-j-ai.jpg" aria-haspopup="true" aria-controls="dropdown-menu4" alt="">
+                        </a>
+                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                          <div class="dropdown-content">
+                            <div class="dropdown-item">
+                              <a class="button is-link heading-bold">Je choisis ce film </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column">
+                       <div class="dropdown is-hoverable">
+                        <a class="dropdown-trigger film-hover">
+                          <img src= "images/films/nouveauHeros.jpg" aria-haspopup="true" aria-controls="dropdown-menu4" alt="">
+                        </a>
+                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                          <div class="dropdown-content">
+                            <div class="dropdown-item">
+                              <a class="button is-link heading-bold">Je choisis ce film </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="column">
+                       <div class="dropdown is-hoverable">
+                        <a class="dropdown-trigger film-hover">
+                          <img src="images/films/fast&amp;furious.jpg" aria-haspopup="true" aria-controls="dropdown-menu4" alt="">
+                        </a>
+                        <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                          <div class="dropdown-content">
+                            <div class="dropdown-item">
+                              <a class="button is-link heading-bold">Je choisis ce film </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+            <div class="step-content">
+              <div class="columns">
+                <div class="column has-text-left">
+                  <div class="box is-shadowless box-custom box-space-large">
+                    <h2 class="subtitle heading-bold is-3">Ma projection</h2>
+                    
+                  <div class="content">
+                   <hr>
+                    <h3>The Big Lebowski</h3>
+                     <nav class="level is-mobile">
+                      <div class="level-left">
+                           <div class="level-item has-text-centered">
+                          <div>
+                           <img src="images/img-icon-date@2x.png" class="event-info-icon">
+                            <p class="subtitle is-4 uppercase-on heading-bold">19 mai</p>
+                          </div>  
+                        </div>
+                        <div class="level-item has-text-centered">
+                          <div>
+                            <img src="images/img-icon-time@2x.png" class="event-info-icon">
+                            <p class="subtitle is-4 uppercase-on heading-bold">20H30</p>
+                          </div>
+                        </div>
+                      </div>  
+                  </nav>
+                  
+                  </div>
+                  </div>  
+                </div>
+                <div class="column">
+                  <div class="card-content-large">
+                    <p class="title"><strike >50,00 €</strike><br><span class="title is-5">Votre première séance offerte !</span></p></div>
+                  <a class="button is-primary is-medium heading-bold">Je profite de ma projection gratuite <span class="btn-icon-right">→</span></a>
+                </div>
+                
+              </div>
+              
+            
+            </div>
+          
+          </div>
+          
+          <div class="steps-actions">
+            <div class="steps-action">
+              <a href="#" data-nav="previous" class="button is-medium btn-control btn-rounded-disabled is-shadowless"> < </a>
+            </div>
+            <div class="steps-action">
+              <a href="#" data-nav="next" class="button btn-control is-medium  btn-rounded is-shadowless">></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+           <div id="datePicker" class="datepicker">
+            <div class="calendar">
+          <div class="calendar-nav">
+            <div class="calendar-nav-previous-month">
+              <button class="button is-small is-text">
+                <svg viewBox="0 0 50 80" xml:space="preserve">
+                  <polyline fill="none" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round" points="45.63,75.8 0.375,38.087 45.63,0.375 "></polyline>
+                </svg>
+              </button>
+            </div>
+            <div class="calendar-month">Mars 2017</div>
+            <div class="calendar-nav-next-month">
+              <button class="button is-small is-text">
+                <svg viewBox="0 0 50 80" xml:space="preserve">
+                  <polyline fill="none" stroke-width=".5em" stroke-linecap="round" stroke-linejoin="round" points="0.375,0.375 45.63,38.087 0.375,75.8 "></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="calendar-container">
+            <div class="calendar-header">
+              <div class="calendar-date">Dim</div>
+              <div class="calendar-date">Lun</div>
+              <div class="calendar-date">Mar</div>
+              <div class="calendar-date">Mer</div>
+              <div class="calendar-date">Jeu</div>
+              <div class="calendar-date">Ven</div>
+              <div class="calendar-date">Sam</div>
+            </div>
+            <div class="calendar-body">
+              <div class="calendar-date is-disabled"><button class="date-item">26</button></div>
+              <div class="calendar-date is-disabled"><button class="date-item">27</button></div>
+              <div class="calendar-date is-disabled"><button class="date-item">28</button></div>
+              <div class="calendar-date"><button class="date-item">1</button></div>
+              <div class="calendar-date"><button class="date-item">2</button></div>
+              <div class="calendar-date"><button class="date-item">3</button></div>
+              <div class="calendar-date tooltip" data-tooltip="Today"><button class="date-item is-today">4</button></div>
+              <div class="calendar-date tooltip" data-tooltip="Not available" disabled=""><button class="date-item">5</button></div>
+              <div class="calendar-date"><button class="date-item">6</button></div>
+              <div class="calendar-date"><button class="date-item">7</button></div>
+              <div class="calendar-date tooltip" data-tooltip="You have appointments"><button class="date-item">8</button></div>
+              <div class="calendar-date"><button class="date-item">9</button></div>
+              <div class="calendar-date"><button class="date-item">10</button></div>
+              <div class="calendar-date"><button class="date-item">11</button></div>
+              <div class="calendar-date"><button class="date-item">12</button></div>
+              <div class="calendar-date"><button class="date-item">13</button></div>
+              <div class="calendar-date"><button class="date-item">14</button></div>
+              <div class="calendar-date"><button class="date-item">15</button></div>
+              <div class="calendar-date calendar-range calendar-range-start"><button class="date-item is-active">16</button></div>
+              <div class="calendar-date calendar-range"><button class="date-item">17</button></div>
+              <div class="calendar-date calendar-range"><button class="date-item">18</button></div>
+              <div class="calendar-date calendar-range"><button class="date-item">19</button></div>
+              <div class="calendar-date calendar-range calendar-range-end"><button class="date-item is-active">20</button></div>
+              <div class="calendar-date"><button class="date-item">21</button></div>
+              <div class="calendar-date"><button class="date-item">22</button></div>
+              <div class="calendar-date"><button class="date-item">23</button></div>
+              <div class="calendar-date"><button class="date-item">24</button></div>
+              <div class="calendar-date"><button class="date-item">25</button></div>
+              <div class="calendar-date"><button class="date-item">26</button></div>
+              <div class="calendar-date"><button class="date-item">27</button></div>
+              <div class="calendar-date"><button class="date-item">28</button></div>
+              <div class="calendar-date"><button class="date-item">29</button></div>
+              <div class="calendar-date"><button class="date-item">30</button></div>
+              <div class="calendar-date"><button class="date-item">31</button></div>
+              <div class="calendar-date is-disabled"><button class="date-item">1</button></div>
+          </div>  
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <script type="text/javascript" src="lib/main.js"></script>
+    <script src="/node_modules/bulma-steps/dist/bulma-steps.min.js"></script>
+    <script src="/node_modules/bulma-calendar/dist/bulma-calendar.min.js"></script>
+    <script>
+    var datePicker = new bulmaCalendar( document.getElementById( 'datepickerDemo' ));
+    document.addEventListener('DOMContentLoaded', function () {
+    var datePickers = bulmaCalendar.attach('[type="date"]', {
+    overlay: true,
+    minDate: '01-01-2018',
+    maxDate: '12-31-2018',
+    dateFormat: 'jj-mm-aaaa'
+  });
+  // datePickers now contains an Array of all datePicker instances
+});
+    </script>
+    
+  </body>
+</html>
