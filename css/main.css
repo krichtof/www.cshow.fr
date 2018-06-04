@@ -6416,7 +6416,7 @@ label.panel-block {
       padding: 18rem 1.5rem; } }
 
 .footer {
-  background-color: #fafafa;
+  background-color: #f7f4ee;
   padding: 3rem 1.5rem 6rem; }
 
 .steps {
@@ -7160,6 +7160,10 @@ label.panel-block {
 .section-base {
   padding: 2rem 0;
   background-color: #F6F3EC; }
+
+@media (min-width: 1180px) {
+  p.p-narrow {
+    width: 70%; } }
 
 /*notifications */
 .notification {

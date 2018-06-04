@@ -13,6 +13,7 @@ $success: hsl(171, 64%, 43%);
 $info: $grey-dark; 
 $warning: hsl(21, 96%, 72%);
 $danger: hsl(4, 86%, 59%);
+$footer-background-color: hsl(42, 36%, 95%);
 
 @import "node_modules/bulma/bulma";
 @import "node_modules/bulma-steps/dist/bulma-steps";
@@ -37,7 +38,11 @@ $calendar-today-color: $red-bis;
   padding: 2rem 0;
   background-color: #F6F3EC;
 }
-
+ @media (min-width:1180px) {
+  p.p-narrow {
+  width:70%;
+  }
+}
 /*notifications */
 .notification {
   color: white;
