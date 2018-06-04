@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page utilisateur</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a href="#"> <!-- before was: "a class="navbar-item" -->
+            <img src="images/logo-nav.svg" alt="C-Show - Faites votre cinéma">
+          </a>
+
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+          <!-- navbar start, navbar end -->
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-end">
+            <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        Mon nom
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/projection/votre_liste">
+                          Liste de vos projections
+                        </a>
+                        <hr class="navbar-divider">
+                        <a class="navbar-item" href="/logout?next=/login">
+                          Déconnexion
+                        </a>
+                   </div>
+               </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <section class="hero is-danger is-medium is-large">
+      <div class="prog">
+
+        <div class="container has-text-left">
+          <div class="columns is-centered" >
+            
+            <div class="column is-8 has-text-centered">
+            <h1 class="title-orga txt-dark">L'hermitage</h1>
+                  <h2 class="event-subtitle txt-light">fait son cinéma</h2>
+             <img class="" src= "images/img-persoproj-prog@2x.png" style="height: 141px;">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <section class="section-base">
+     <div class="columns is-centered">
+         <div class="column is-8 is-narrow">
+            <div class="level">
+              <div class= level-left>
+                <div class="level-item">
+                  <a class="button is-link is-medium heading-bold">Nouvelle projection
+                  <span class="btn-icon-custom btn-icon-txt">+</span>
+                  </a>
+                </div>
+                <div class="level-item">
+                  <a class="button is-outline is-medium heading-bold">Consulter le catalogue 
+                  </a>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+    </section>
+
+    <section class="section-base">
+      <div class="columns is-centered">
+         <div class="column is-8 is-narrow">
+          <h2 class="title is-3">Mes projections</h2>
+          
+           <div class="Rtable Rtable--3cols Rtable--collapse">  
+            <div class="Rtable-cell Rtable-cell--head"><h3 class="title is-4 uppercase-on">Film</h3>
+            </div>  
+            <div class="Rtable-cell Rtable-cell--head"><h3 class="title is-4 uppercase-on">date</h3>
+            </div>  
+            <div class="Rtable-cell"></div>  
+          
+            <div class="Rtable-cell">
+            <h4 class="has-text-weight-semibold">L'Âge de glace 2</h4>
+            </div>  
+            <div class="Rtable-cell">12 juin 2018 à 17h</div>  
+            <div class="Rtable-cell Rtable-cell--foot has-text-centered">
+            <a href="#" class="button is-outline is-small is-uppercase">payer</a>
+            </div> 
+             
+            <div class="Rtable-cell">
+            <h4 class="has-text-weight-semibold">The big Lebowski</h4>
+            </div>
+            <div class="Rtable-cell">12 juin 2018 à 17h</div>  
+            <div class="Rtable-cell Rtable-cell--foot has-text-centered">
+              <a href="#" class="button is-outline is-small is-uppercase">payer</a>
+            </div>
+            
+          </div>
+          </div>
+          
+        </div>
+    </section> 
+     
+            
+
+    <script type="text/javascript" src="lib/main.js"></script>
+    
+    
+  </body>
+</html>

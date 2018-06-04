@@ -5,6 +5,9 @@ $family-primary: $family-sans-serif;
 $navbar-height: 5rem;
 $navbar-item-img-max-height: 4rem;
 $brown: hsl(0, 17%, 29%);
+$brown-bis: hsl(0, 12%, 43%);
+$brown-extralight: hsl(0, 9%, 59%);
+$brown-light: hsl(0, 9%, 47%);
 $primary: $brown;
 $success: hsl(171, 64%, 43%);
 $info: $grey-dark; 
@@ -29,6 +32,11 @@ $input-focus-border-color: $red-link;
 $calendar-header-color: $red-bis;
 $calendar-today-color: $red-bis;
 
+/*layout main*/
+.section-base {
+  padding: 2rem 0;
+  background-color: #F6F3EC;
+}
 
 /*notifications */
 .notification {
@@ -130,6 +138,9 @@ text-overflow: ellipsis;
 white-space: nowrap;
 }
 /*elements*/
+.navbar-link::after {
+    border-color: $red-link;
+}
 .card-content-large {
   padding: 2rem;
 }
@@ -218,6 +229,11 @@ white-space: nowrap;
   height: 1.5rem;
   margin-left: 1rem;
 }
+.btn-icon-txt {
+  font-size: 1.9rem;
+  font-family: 'Supernettcn-Regular';
+  line-height: 2rem;
+}
 .separator {
   padding: 2rem 0;
   border-bottom: 1px solid #e6e6e6;
@@ -229,7 +245,16 @@ white-space: nowrap;
 .label {
   font-weight:400;
 }
-
+.button.is-outline {
+  border-color: $brown-bis;
+  border-radius: 0px;
+  color: $brown;
+  background-color: transparent;
+}
+.button.is-outline:hover {
+  border-color: $brown-extralight;
+  color: $brown-light;
+}
 .button.is-link {
   background-color: #583E3E;
   border-radius: 0;
@@ -272,6 +297,19 @@ a.navbar-item.is-active,
 .navbar-link:hover, 
 .navbar-link.is-active {
   color: #e7624b;
+  background-color:transparent;
+}
+.navbar .navbar-item:hover {
+  background-color:transparent;
+}
+.navbar-dropdown a.navbar-item {
+  font-family:"Open Sans";
+}
+.navbar-dropdown a.navbar-item:hover {
+  background-color:transparent;
+}
+.navbar .navbar-dropdown {
+  border-radius:3px;
 }
 a {
   color:$link;
@@ -581,6 +619,91 @@ a.link-invert:hover {
     line-height: 2.4rem;
   }
 }
+
+/* table style */
+/* ================================== */
+
+/*tables */
+
+.Rtable {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+.Rtable-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.9em 1.2em;
+  overflow: hidden;
+  list-style: none;
+  border-bottom: solid 1px $grey-lighter;
+  background-color: transparent;
+}
+
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-cell {
+  width: 50%;
+}
+.Rtable--3cols > .Rtable-cell {
+  width: 33.33%;
+}
+.Rtable--4cols > .Rtable-cell {
+  width: 25%;
+}
+.Rtable--5cols > .Rtable-cell {
+  width: 20%;
+}
+.Rtable--6cols > .Rtable-cell {
+  width: 16.6%;
+}
+
+/* Apply styles 
+================================== */
+
+.Rtable {
+  position: relative;
+  top: 3px;
+  left: 3px;
+}
+.Rtable-cell {
+  margin: -3px 0 0 -3px;
+}
+
+.Rtable-cell--head {
+ font-weight:500;
+}
+
+/* Responsive
+==================================== */
+@media all and (max-width: 500px) {
+  .Rtable--collapse {
+    display: block;
+  }
+  .Rtable--collapse > .Rtable-cell {
+    width: 100% !important;
+  }
+  .Rtable--collapse > .Rtable-cell--foot {
+    margin-bottom: 1em;
+  }
+  .Rtable-cell--head {
+    display:none;
+  }
+}
+.no-flexbox .Rtable {
+  display: block;
+}
+.no-flexbox .Rtable > .Rtable-cell {
+  width: 100%;
+}
+.no-flexbox .Rtable > .Rtable-cell--foot {
+  margin-bottom: 1em;
+}
+
+
+/* */
 .hero h1.title-orga {
   font-family: "FranklinGothicHandDemiShadow";
   margin-top: 2.2rem;
@@ -629,16 +752,3 @@ a.link-invert:hover {
   }
 }
 
-/* responsive */
-
-
-
-
-  /*@media {
-    .title {
-    font-size: 2.6rem; 
-    line-height: 3.6rem;
-  }
-
-}
-*/

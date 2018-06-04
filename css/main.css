@@ -7156,6 +7156,11 @@ label.panel-block {
         background-color: #f0493d;
         color: #fff; }
 
+/*layout main*/
+.section-base {
+  padding: 2rem 0;
+  background-color: #F6F3EC; }
+
 /*notifications */
 .notification {
   color: white; }
@@ -7250,6 +7255,9 @@ a.film-hover:hover {
   white-space: nowrap; }
 
 /*elements*/
+.navbar-link::after {
+  border-color: #eb6047; }
+
 .card-content-large {
   padding: 2rem; }
 
@@ -7340,6 +7348,11 @@ a.film-hover:hover {
   height: 1.5rem;
   margin-left: 1rem; }
 
+.btn-icon-txt {
+  font-size: 1.9rem;
+  font-family: 'Supernettcn-Regular';
+  line-height: 2rem; }
+
 .separator {
   padding: 2rem 0;
   border-bottom: 1px solid #e6e6e6;
@@ -7349,6 +7362,16 @@ a.film-hover:hover {
 
 .label {
   font-weight: 400; }
+
+.button.is-outline {
+  border-color: #7b6060;
+  border-radius: 0px;
+  color: #573d3d;
+  background-color: transparent; }
+
+.button.is-outline:hover {
+  border-color: #a08d8d;
+  color: #836d6d; }
 
 .button.is-link {
   background-color: #583E3E;
@@ -7390,7 +7413,20 @@ a.navbar-item {
 a.navbar-item:hover, a.navbar-item.is-active,
 .navbar-link:hover,
 .navbar-link.is-active {
-  color: #e7624b; }
+  color: #e7624b;
+  background-color: transparent; }
+
+.navbar .navbar-item:hover {
+  background-color: transparent; }
+
+.navbar-dropdown a.navbar-item {
+  font-family: "Open Sans"; }
+
+.navbar-dropdown a.navbar-item:hover {
+  background-color: transparent; }
+
+.navbar .navbar-dropdown {
+  border-radius: 3px; }
 
 a {
   color: #eb6047; }
@@ -7665,6 +7701,77 @@ a.link-invert:hover {
     font-size: 2.4rem;
     line-height: 2.4rem; } }
 
+/* table style */
+/* ================================== */
+/*tables */
+.Rtable {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 3em 0;
+  padding: 0; }
+
+.Rtable-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  width: 100%;
+  padding: 0.9em 1.2em;
+  overflow: hidden;
+  list-style: none;
+  border-bottom: solid 1px #dbdbdb;
+  background-color: transparent; }
+
+/* Table column sizing
+================================== */
+.Rtable--2cols > .Rtable-cell {
+  width: 50%; }
+
+.Rtable--3cols > .Rtable-cell {
+  width: 33.33%; }
+
+.Rtable--4cols > .Rtable-cell {
+  width: 25%; }
+
+.Rtable--5cols > .Rtable-cell {
+  width: 20%; }
+
+.Rtable--6cols > .Rtable-cell {
+  width: 16.6%; }
+
+/* Apply styles 
+================================== */
+.Rtable {
+  position: relative;
+  top: 3px;
+  left: 3px; }
+
+.Rtable-cell {
+  margin: -3px 0 0 -3px; }
+
+.Rtable-cell--head {
+  font-weight: 500; }
+
+/* Responsive
+==================================== */
+@media all and (max-width: 500px) {
+  .Rtable--collapse {
+    display: block; }
+  .Rtable--collapse > .Rtable-cell {
+    width: 100% !important; }
+  .Rtable--collapse > .Rtable-cell--foot {
+    margin-bottom: 1em; }
+  .Rtable-cell--head {
+    display: none; } }
+
+.no-flexbox .Rtable {
+  display: block; }
+
+.no-flexbox .Rtable > .Rtable-cell {
+  width: 100%; }
+
+.no-flexbox .Rtable > .Rtable-cell--foot {
+  margin-bottom: 1em; }
+
+/* */
 .hero h1.title-orga {
   font-family: "FranklinGothicHandDemiShadow";
   margin-top: 2.2rem; }
@@ -7705,13 +7812,3 @@ a.link-invert:hover {
 @media screen and (max-width: 768px) {
   .hero-event-col-mobile {
     padding-bottom: 3rem; } }
-
-/* responsive */
-/*@media {
-    .title {
-    font-size: 2.6rem; 
-    line-height: 3.6rem;
-  }
-
-}
-*/
